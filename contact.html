@@ -17,14 +17,16 @@
         <p>1005 Macon Hwy #621 &bull; Athens, GA &bull; 678-349-8107 &bull; paul.ogunmwonyi@gmail.com</p>
     </section>
     <hr>
-    <form action="https://formsubmit.co" method="post">
-        <label for="name"> Name: </label>
-        <input type="text" id="name" name="name" required>
-        <label for="email"> Email: </label>
-        <input type="email" id="email" name="email" required>
-        <label for="message"> Message: </label>
+    <form method="POST" action="https://formsubmit.co/paul.ogunmwonyi@gmail.com">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/CSCI4300/cv/thankyou.html"> 
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+        <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit"> Submit </button>
+        <button type="submit">Submit</button>
+    </form>
     </form>
     <footer>
         <a href="index.html">
