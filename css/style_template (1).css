@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    margin: 2%; 
+    margin: 1%; 
     background-color:  #e0ebeb;
 }
 
@@ -11,6 +11,7 @@ nav {
     align-items: center;
     background-color: #24527a;
     padding: 10px;
+    border-radius: 8px;
 }
 
 nav p {
@@ -33,6 +34,7 @@ footer {
     background-color: #24527a;
     padding: 10px;
     margin-top: 1%;
+    border-radius: 8px;
 }
 
 footer a {
@@ -54,6 +56,7 @@ footer a:hover {
     margin-bottom: 1%;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 8px;
 }
 
 .splash h1 {
@@ -101,6 +104,7 @@ section {
     margin-top: 1%;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 8px;
 }
 
 /* Section Headings */
@@ -133,6 +137,12 @@ section a:hover {
     color: lightblue;
 }
 
+section hr {
+    width: 100%;
+    border: 1px solid;
+    border-color: lightblue;
+}
+
 /* List Styles */
 ul {
     font-family: "Montserrat", serif;
@@ -159,6 +169,7 @@ dl {
     color: black;
     margin-left: 2%;
     margin-right: 2%;
+    font-size: large;
 }
 dl dt{
     font-weight: bold;
@@ -171,23 +182,118 @@ dl dd{
 }
 
 /* Project Section */
-.three-col {}
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-bottom: 10px;
+    width: 90vw; 
+}
 
-.card {}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: lightblue;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
 
-.card img {}
+.card img {
+    max-width: auto;
+    max-height: 240px;
+    object-fit: cover;
+    margin-top: 3%;
+    border-radius: 8px !important; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
 
-.card h3 {}
+.card h3 {
+    font-size: x-large;
+}
+
+.card hr {
+    width: 100%;
+    border: 1px solid;
+    border-color: black;
+}
 
 /* Contact Page Styles */
-.one-col {}
+section h1 {
+    font-size: xx-large;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #24527a;
+}
 
-form {}
+.one-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-form input, form textarea {}
+form {
+    background-color: #5dacbd;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 5px;
+}
+
+.form-row2 {
+    margin-left: 35%;
+    margin-right: 35%;
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+}
+
+.form-row3 {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+label {
+    margin-right: 5px;
+    font-size: x-large;
+    color: #24527a;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    font-size: medium;
+    width: 100%;
+    border: 1px solid #ccc;
+}
 
 form input:focus, form textarea:focus {}
 
-form button {}
+form button{
+    padding: 10px;
+    background-color: lightblue; /* A green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #24527a;
+}
 
-form button:hover {}
+form button:hover {
+    background-color: #24527a;
+    color: white;
+}
